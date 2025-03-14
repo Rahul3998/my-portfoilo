@@ -1,13 +1,15 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom"; // ✅ use HashRouter
 import Home from "./route/Home";
-import React from "react";
 import Project from "./route/Project";
 import About from "./route/About";
 import Contact from "./route/Contact";
+import React from "react";
 
 function App() {
   return (
     <Router>
+      {" "}
+      {/* ✅ wrap everything inside Router */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project" element={<Project />} />
