@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom"; // ✅ use HashRouter
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./route/Home";
 import Project from "./route/Project";
 import About from "./route/About";
@@ -8,8 +8,6 @@ import React from "react";
 function App() {
   return (
     <Router>
-      {" "}
-      {/* ✅ wrap everything inside Router */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project" element={<Project />} />
